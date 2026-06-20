@@ -17,12 +17,12 @@ Projekt realizuje Zadanie 12 – Katalog kolekcji filmów.
 
 Funkcjonalności
 
--> Wyświetlanie listy filmów – wszystkie filmy prezentowane są w czytelnej tabeli z tytułem, reżyserem i oceną.
--> Dodawanie nowego filmu – formularz umożliwia wprowadzenie tytułu, reżysera oraz oceny (1–10).
--> Usuwanie filmu – każdy wpis można usunąć przyciskiem „Usuń".
--> Walidacja formularza – sprawdzane są wymagane pola oraz poprawność oceny (liczba 1–10).
--> Tryb ciemny / jasny – przycisk w nagłówku przełącza motyw aplikacji.
--> Responsywny układ – aplikacja działa poprawnie na urządzeniach mobilnych i desktopowych.
+- Wyświetlanie listy filmów – wszystkie filmy prezentowane są w czytelnej tabeli z tytułem, reżyserem i oceną.
+- Dodawanie nowego filmu – formularz umożliwia wprowadzenie tytułu, reżysera oraz oceny (1–10).
+- Usuwanie filmu – każdy wpis można usunąć przyciskiem „Usuń".
+- Walidacja formularza – sprawdzane są wymagane pola oraz poprawność oceny (liczba 1–10).
+- Tryb ciemny / jasny – przycisk w nagłówku przełącza motyw aplikacji.
+- Responsywny układ – aplikacja działa poprawnie na urządzeniach mobilnych i desktopowych.
 
 Instrukcja uruchomienia
 
@@ -54,22 +54,22 @@ Model (const Model)
 Zarządza danymi aplikacji (kolekcją filmów). Przechowuje listę filmów w pamięci i udostępnia
 metody:
 
--> getAll() – zwraca listę wszystkich filmów
--> add({ title, director, rating }) – dodaje nowy film
--> remove(id) – usuwa film o podanym id
+- getAll() – zwraca listę wszystkich filmów
+- add({ title, director, rating }) – dodaje nowy film
+- emove(id) – usuwa film o podanym id
 
 View (const View)
 
 Odpowiada za renderowanie interfejsu użytkownika:
 
--> renderFilms(films) – generuje tabelę filmów lub komunikat pustego stanu
--> showError(msg) / clearError() – obsługa komunikatów błędów
--> getFormValues() – odczytuje wartości z formularza
--> resetForm() – czyści formularz po dodaniu filmu
+- renderFilms(films) – generuje tabelę filmów lub komunikat pustego stanu
+- showError(msg) / clearError() – obsługa komunikatów błędów
+- getFormValues() – odczytuje wartości z formularza
+- resetForm() – czyści formularz po dodaniu filmu
 
 Controller (const Controller)
 
 Łączy Model i View. Obsługuje zdarzenia użytkownika:
 
--> handleAdd(e) – waliduje dane z formularza, wywołuje Model.add() i odświeża widok
--> handleDelete(id) – wywołuje Model.remove() i odświeża widok
+- handleAdd(e) – waliduje dane z formularza, wywołuje Model.add() i odświeża widok
+- handleDelete(id) – wywołuje Model.remove() i odświeża widok
