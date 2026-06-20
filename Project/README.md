@@ -37,10 +37,10 @@ Nie są potrzebne żadne dodatkowe zależności. Czcionki ładowane są z Google
 dostęp do internetu).
 
 Technologie
-HTML5 - Struktura semantyczna
-CSS3 - Stylowanie i układ responsywny
-Vanilla JavaScript - Logika MVC
-Google Fonts – DM Sans - Typografia
+- HTML5 - Struktura semantyczna
+- CSS3 - Stylowanie i układ responsywny
+- Vanilla JavaScript - Logika MVC
+- Google Fonts – DM Sans - Typografia
 
 Aplikacja nie korzysta z żadnych zewnętrznych bibliotek JS ani frameworków.
 
